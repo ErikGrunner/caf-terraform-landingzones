@@ -5,7 +5,7 @@ export ANSIBLE_DISPLAY_SKIPPED_HOSTS=False
 
 params=$(echo ${@} | xargs -n1 | xargs -I@ echo "-e @ " )
 
-ansible-playbook caf/templates/ansible/walk-through-single.yaml \
+ansible-playbook /tf/caf/templates/ansible/walk-through-single.yaml \
   -e topology_file=/tf/caf/landingzones/templates/platform/single_subscription.yaml \
   -e public_templates_folder=/tf/caf/landingzones/templates \
   -e landingzones_folder=/tf/caf/landingzones \
