@@ -16,12 +16,12 @@
     - name: customer_name
       prompt: Set the short version of your customer name with no spaces
       private: no
-      default: contoso
+      default: eirgrid
 
     - name: caf_environment
       prompt: Set the CAF Environment value
       private: no
-      default: contoso
+      default: eirgid
 
     - name: prefix
       prompt: Set the prefix to add to all resource.
@@ -31,12 +31,12 @@
     - name: alz_mg_prefix
       prompt: Management group prefix (value must be between 2 to 10 characters long and can only contain alphanumeric characters and hyphens). 
       private: no
-      default: es
+      default: eg
 
     - name: alz_mg_name
       prompt: Management group name
       private: no
-      default: Contoso
+      default: Eirgrid
 
     - name: default_email_address
       prompt: Email address to send all notifications
@@ -47,8 +47,8 @@
       prompt: Azure regions (lowercase, short version)
       private: no
       default:
-        region1: australiaeast
-        region2: australiacentral
+        region1: northeurope
+        region2: centraleurope
 
     - name: default_region_key
       prompt: Default CAF Azure region key
